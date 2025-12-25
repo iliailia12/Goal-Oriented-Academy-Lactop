@@ -1,0 +1,56 @@
+1) ვებ-საიტზე შემოიტანეთ 7 ცალი div-ი, განალაგეთ ისინი ერთმანეთის გვერდით x ღერძზე. გასტილეთ ეს div-ები შესაბამისად და მიანიჭებთ ზომები (200x200 --> px) და უკანა ფონის ფერი წითელი. თქვენი დავალებაა გაუწეროთ ამ ვებ-საიტს responsive, შესაბამის მოწყობილობებზე (tablet --> 768px და large mobile phones --> 480px). 768px-ზე შეუცვალეთ div-ებს უკანა ფონის ფერი, ასევე შეცვალეთ მათი განლაგება x ღერძიდან y ღერძზე, ხოლო 480px-ზე კი კვლავ სხვა ფერში შეუცვალეთ div-ებს უკანა ფონის ფერი და უკვე y ღერძის ნაცვლად განალაგეთ ისევ y ღერზე, მაგრამ reverse წყობით. 
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Do</title>
+  <style>
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* y ღერძი */
+  }
+
+  .box {
+    background-color: blue;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse; /* y ღერძი reverse */
+  }
+
+  .box {
+    background-color: green;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>

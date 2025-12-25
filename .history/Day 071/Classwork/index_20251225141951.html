@@ -1,0 +1,55 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <style>
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* y ღერძი */
+  }
+
+  .box {
+    background-color: blue;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse; /* y ღერძი reverse */
+  }
+
+  .box {
+    background-color: green;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Floating Circle</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+  }
+
+  .scene {
+    width: 400px;
+    height: 400px;
+    background: #4a6fe3;
+    position: relative;
+  }
+
+  .circle {
+    width: 140px;
+    height: 140px;
+    background: #e6c08b;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translate(-50%, 0);
+    }
+    50% {
+      transform: translate(-50%, 20px);
+    }
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="scene">
+    <div class="circle"></div>
+  </div>
+</body>
+</html>

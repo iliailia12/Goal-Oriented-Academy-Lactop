@@ -1,0 +1,53 @@
+<!-- sun animation  eclipse  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sun-warper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #87ceeb, #f0e68c);
+        }
+
+        .sun {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            animation: rotate 10s linear infinite;
+        }
+        .sun-core {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #ffdd00, #ff9900);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.7);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="sun-warper">
+        <div class="sun">
+            <div class="sun-core"></div>
+            <div class="sun-ray sun-ray1"></div>
+            <div class="sun-ray sun-ray2"></div>
+            <div class="sun-ray sun-ray3"></div>
+            <div class="sun-ray sun-ray4"></div>
+            <div class="sun-ray sun-ray5"></div>
+            <div class="sun-ray sun-ray6"></div>
+            <div class="sun-ray sun-ray7"></div>
+            <div class="sun-ray sun-ray8"></div>
+        </div>
+    </div>
+</body>
+</html>

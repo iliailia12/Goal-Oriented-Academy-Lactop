@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Divs</title>
+  <style>
+    기본 სტილები
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* y ღერძი */
+  }
+
+  .box {
+    background-color: blue;
+  }
+}
+
+/* Large Mobile - 480px */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column-reverse; /* y ღერძი reverse */
+  }
+
+  .box {
+    background-color: green;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
