@@ -1,0 +1,108 @@
+<!-- 3) შექმენით ლინკების სია, შემდგარი მინიმუმ ლინკისგან. გასტილეთ თითოეული ლინკი განსხვავებულად. ყოველ მათგანს აუცილებლად უნდა ჰქონდეს გასტილული ტექსტის დეკორაცია.
+
+დაუმატეთ მათ :link, :hover და :active მდგომარეობის სტილები.
+გაუწერეთ tranistion კუთვნილება ანიმაციის დროის გასაკონტროლებლად -->
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Styled Links</title>
+
+<style>
+
+    /* საერთო სტილი */
+    a {
+        display: block;
+        margin: 10px 0;
+        font-size: 22px;
+        font-family: Arial;
+        transition: 0.3s ease;   /* ყველა ანიმაციის დრო */
+    }
+
+    /* 1) წითელი ლინკი */
+    .link1:link {
+        color: crimson;
+        text-decoration: underline;
+    }
+    .link1:hover {
+        color: rgb(110, 0, 0);
+        text-decoration: none;
+    }
+    .link1:active {
+        transform: scale(0.95);
+    }
+
+
+    /* 2) ლურჯი ლინკი */
+    .link2:link {
+        color: royalblue;
+        text-decoration: overline;
+    }
+    .link2:hover {
+        color: navy;
+        text-decoration: none;
+    }
+    .link2:active {
+        transform: translateX(5px);
+    }
+
+
+    /* 3) მწვანე ლინკი */
+    .link3:link {
+        color: green;
+        text-decoration: line-through;
+    }
+    .link3:hover {
+        color: darkgreen;
+        text-decoration: underline;
+    }
+    .link3:active {
+        transform: scale(1.1);
+    }
+
+
+    /* 4) იასამნისფერი ლინკი */
+    .link4:link {
+        color: purple;
+        text-decoration: underline dotted;
+    }
+    .link4:hover {
+        color: rgb(90, 0, 90);
+        text-decoration: underline wavy;
+    }
+    .link4:active {
+        letter-spacing: 3px;
+    }
+
+
+    /* 5) ფორთოხლისფერი ლინკი */
+    .link5:link {
+        color: orange;
+        text-decoration: none;
+        border-bottom: 2px solid orange;
+    }
+    .link5:hover {
+        color: rgb(218, 142, 0);
+        border-bottom-color: black;
+    }
+    .link5:active {
+        transform: translateY(4px);
+    }
+
+</style>
+
+</head>
+<body>
+
+<h2>ლინკების სტილები</h2>
+
+<a href="#" class="link1">Google</a>
+<a href="#" class="link2">Facebook</a>
+<a href="#" class="link3">YouTube</a>
+<a href="#" class="link4">Wikipedia</a>
+<a href="#" class="link5">Twitter</a>
+
+</body>
+</html>

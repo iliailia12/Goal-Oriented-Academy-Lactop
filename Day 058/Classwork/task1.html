@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Cards Grid</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        padding: 20px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 4px;
+        color: white;
+    }
+
+    .blue  { background: #2e7fd4; }
+    .yellow { background: #e6b625; color: black; }
+    .red   { background: #e4374b; }
+    .gray  { background: #d7d7d7; color: black; }
+
+    .card h3 {
+        margin-top: 0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="grid">
+    <div class="card blue">
+        <h3>Bono</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Eius corporis obcaecati perferendis fuga quidem ad alias debitis
+           excepturi ipsa laudantium sapiente.</p>
+    </div>
+
+    <div class="card yellow">
+        <h3>Edge</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Eius corporis obcaecati perferendis fuga quidem ad alias debitis
+           excepturi ipsa laudantium sapiente.</p>
+    </div>
+
+    <div class="card red">
+        <h3>Adam</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Eius corporis obcaecati perferendis fuga quidem ad alias debitis
+           excepturi ipsa laudantium sapiente.</p>
+    </div>
+
+    <div class="card gray">
+        <h3>Larry</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Eius corporis obcaecati perferendis fuga quidem ad alias debitis
+           excepturi ipsa laudantium sapiente.</p>
+    </div>
+
+    <!-- მეორე რიგი -->
+    <div class="card blue">
+        <h3>Bono</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Eius corporis obcaecati perferendis fuga quidem ad alias debitis
+           excepturi ipsa laudantium sapiente.</p>
+    </div>
+
+    <div class="card yellow">
+        <h3>Edge</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Eius corporis obcaecati perferendis fuga quidem ad alias debitis
+           excepturi ipsa laudantium sapiente.</p>
+    </div>
+
+    <div class="card red">
+        <h3>Adam</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Eius corporis obcaecati perferendis fuga quidem ad alias debitis
+           excepturi ipsa laudantium sapiente.</p>
+    </div>
+
+    <div class="card gray">
+        <h3>Larry</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+           Eius corporis obcaecati perferendis fuga quidem ad alias debitis
+           excepturi ipsa laudantium sapiente.</p>
+    </div>
+</div>
+
+</body>
+</html>

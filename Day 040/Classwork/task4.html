@@ -1,0 +1,43 @@
+<!-- 4) შექმენით 6 ცალი h1, აქედან css-ში ჩვეულებირვ წამოიღეთ tag selector-ით ყველა h1 და გასტილეთ ისინი (color; background-color). პირველი 4 h1-ის შეუქმენით და გადაეცით ერთნაირი class, და class selector-ის მეშვეობით გასტილეთ ისინი სხვანაირად. 5-ე h1-ს კი გადაეცით id, და გასტილეთ იგი უნიკალურად id selector-ის მეშვეობით, 6-ე h1-ი კი დატ
+ოვეთ ისე :>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Example</title>
+
+    <style>
+        h1 {
+            color: blue;
+            background-color: lightgray;
+        }
+
+        .group-title {
+            color: white;
+            background-color: green;
+        }
+
+        #special-title {
+            color: yellow;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- პირველი 4 h1 — აქვთ class -->
+    <h1 class="group-title">ეს არის პირველი H1</h1>
+    <h1 class="group-title">ეს არის მეორე H1</h1>
+    <h1 class="group-title">ეს არის მესამე H1</h1>
+    <h1 class="group-title">ეს არის მეოთხე H1</h1>
+
+    <h1 id="special-title">ეს არის მეხუთე H1</h1>
+
+    <h1>ეს არის მეექვსე H1 (არ აქვს class ან id)</h1>
+
+</body>
+</html>

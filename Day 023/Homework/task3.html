@@ -1,0 +1,43 @@
+<!-- 3) შექმენით ფორმა, სადაც მომხმარებელს დაუსვამთ ნებისმიერ კითხვას(ამისთვის დაგჭირდებათ label-ი) 4 პასუხის გაცემის ვარიანტით.(ამ ვარიანტებისთვის გამოიყენეთ radio ტიპის input-ი).
+მომხმარებელს უნდა შეეძლოს მხოლოდ ერთი ვარიანტის არჩევა და ფორმის დადასტურება -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question Form</title>
+</head>
+<body>
+
+    <h2>Quiz Question</h2>
+
+    <form>
+
+        <label><b>Which programming language is used for web styling?</b></label>
+        <br><br>
+
+        <input type="radio" id="answer1" name="question" value="python" required>
+        <label for="answer1">Python</label>
+        <br>
+
+        <input type="radio" id="answer2" name="question" value="css">
+        <label for="answer2">CSS</label>
+        <br>
+
+        <input type="radio" id="answer3" name="question" value="java">
+        <label for="answer3">Java</label>
+        <br>
+
+        <input type="radio" id="answer4" name="question" value="c++">
+        <label for="answer4">C++</label>
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

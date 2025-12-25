@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities</title>
+
+    <style>
+        body {
+            background: #f2f2f2;
+            font-family: sans-serif;
+            padding: 40px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            width: 350px;
+            height: 260px;
+            border-radius: 22px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 22px;
+        }
+
+        .card h2, .card p {
+            position: relative;
+            color: white;
+            z-index: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        .card h2 {
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        .card p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="cards">
+
+    <div class="card" style="background-image: url('South Korea');">
+        <h2>South Korea</h2>
+        <p>Seoul is very beautiful place</p>
+    </div>
+
+    <div class="card" style="background-image: url('Tbilisi.webp');">
+        <h2>Tbilisi</h2>
+        <p>Tbilisi is very beautiful place</p>
+    </div>
+
+    <div class="card" style="background-image: url('New York.webp');">
+        <h2>New York</h2>
+        <p>New York is very beautiful place</p>
+    </div>
+
+    <div class="card" style="background-image: url('Paris.webp');">
+        <h2>Paris</h2>
+        <p>Paris is very beautiful place</p>
+    </div>
+
+    <div class="card" style="background-image: url('Tokyo.webp');">
+        <h2>Tokyo</h2>
+        <p>Tokyo is very beautiful place</p>
+    </div>
+
+    <div class="card" style="background-image: url('Dubai.webp');">
+        <h2>Dubai</h2>
+        <p>Dubai is very beautiful place</p>
+    </div>
+</div>
+</body>
+</html>

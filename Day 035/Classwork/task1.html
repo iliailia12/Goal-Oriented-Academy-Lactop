@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Seminar Schedule Table</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 700px;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+
+<table>
+    <tr>
+        <th rowspan="2" class="bold">Day</th>
+        <th colspan="2" class="bold">Schedule</th>
+        <th rowspan="2" class="bold">Seminar<br>Topic</th>
+    </tr>
+
+    <tr>
+        <th class="bold">Begin</th>
+        <th class="bold">End</th>
+    </tr>
+
+    <!-- Monday -->
+    <tr>
+        <td rowspan="2">Monday</td>
+        <td>8:00 a.m.</td>
+        <td>5:00 p.m.</td>
+        <td>Introduction to XML</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td>Validity: DTD and Relax NG</td>
+    </tr>
+
+    <!-- Tuesday -->
+    <tr>
+        <td rowspan="3">Tuesday</td>
+        <td>8:00 a.m.</td>
+        <td>11:00 a.m.</td>
+        <td>XPath</td>
+    </tr>
+    <tr>
+        <td>11:00 a.m.</td>
+        <td>2:00 p.m.</td>
+        <td>XSL Transformations</td>
+    </tr>
+    <tr>
+        <td>2:00 p.m.</td>
+        <td>5:00 p.m.</td>
+        <td></td>
+    </tr>
+
+    <!-- Wednesday -->
+    <tr>
+        <td rowspan="1">Wednesday</td>
+        <td>8:00 a.m.</td>
+        <td>12:00 p.m.</td>
+        <td>XSL Formatting Objects</td>
+    </tr>
+
+</table>
+
+</body>
+</html>

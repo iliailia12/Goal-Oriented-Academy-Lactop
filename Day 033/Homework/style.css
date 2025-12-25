@@ -1,0 +1,142 @@
+/* ================= Base ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================= Header ================= */
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    border-radius: 50%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: white;
+    color: #4a90e2;
+    border-radius: 5px;
+}
+
+/* ================= Sections ================= */
+section {
+    padding: 60px 20px;
+    min-height: 80vh;
+}
+
+section:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+section:nth-child(even) {
+    background-color: #fff;
+}
+
+section .content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* ================= Footer ================= */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+footer .footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+footer .footer-nav ul li a {
+    color: white;
+    transition: 0.3s;
+}
+
+footer .footer-nav ul li a:hover {
+    color: #4a90e2;
+}
+
+footer .contact {
+    text-align: center;
+}

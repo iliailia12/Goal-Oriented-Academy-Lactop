@@ -1,0 +1,36 @@
+<!-- შექმენით div-ი, რომლის contnet-ის ზომა არის 300x300 პიქსელი.
+დივში შიგნით უნდა გეწეროთ ერთი ერთი პარაგრაფი და ერთი ღილაკი.
+div-ს უნდა ჰქონდეს მწვანე bakcgorund-ი.
+
+div-ის ზღვარი(border) უნდა იყოს 2 პიქსელი ზომაში ტირეებით და წითელი.
+დაშორება div-ის ზღვარსა და მის შიგთავს შორის უნდა იყოს ყველა მხირად 10 პიქსელი, ხოლო დაშორება პარაგრაფსა და ღილაკს შორის რომლებიც div-შია უნდა იყოს 30px(არ დაგავიწყდეთ, რომ პარაგრაფს ქარხნულად 16px აქვს დაშორება html-ის ელემენტებს შორის) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .box {
+        width: 300px;
+        height: 300px;
+        background: green;
+        border: 2px dashed red;
+        padding: 10px;
+    }
+
+    .box p {
+        margin-bottom: 30px;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+    <p>ეს არის პარაგრაფი დივის შიგნით.</p>
+    <button>ღილაკი</button>
+</div>
+</body>
+</html>

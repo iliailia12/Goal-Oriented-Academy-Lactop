@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  background: #e6f0f4;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  max-width: 650px;
+  margin: 100px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.top {
+  padding: 30px;
+}
+
+.top h2 {
+  color: #2ab2af;
+}
+
+.top h4 {
+  color: #c0df34;
+}
+
+.top p {
+  color: #777;
+}
+
+.bottom {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+
+.left {
+  background: #2ab2af;
+  color: white;
+  padding: 30px;
+}
+
+.price {
+  font-size: 28px;
+}
+
+.price span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #c0df34;
+  border: none;
+  color: #2a2a2a;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right {
+  background: #4abebd;
+  color: white;
+  padding: 30px;
+}
+
+.right ul {
+  padding-left: 18px;
+}
+
+.right li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+  <div class="top">
+    <h2>Join our community</h2>
+    <h4>30-day, hassle-free money back guarantee</h4>
+    <p>
+      Gain access to our full library of tutorials along with expert code reviews.
+      Perfect for any developers who are serious about honing their skills.
+    </p>
+  </div>
+
+  <div class="bottom">
+    <div class="left">
+      <h3>Monthly Subscription</h3>
+      <p class="price">$29 <span>per month</span></p>
+      <p>Full access for less than $1 a day</p>
+      <button>Sign Up</button>
+    </div>
+
+    <div class="right">
+      <h3>Why Us</h3>
+      <ul>
+        <li>Tutorials by industry experts</li>
+        <li>Peer & expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

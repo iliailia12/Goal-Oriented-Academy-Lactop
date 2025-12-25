@@ -1,0 +1,7 @@
+5) ახსენით რა არის transition და რისთვის ვიყენებთ. განმარტეთ თითოეული ქვე-კუთვნილება: transition-property, transition-duration, transition-timing-function, transition-delay
+
+  
+
+transition-duration         რამდენ ხანს გრძელდება  
+transition-timing-function  ცვლილების სიჩქარე      
+transition-delay            დაწყების დაყოვნება     

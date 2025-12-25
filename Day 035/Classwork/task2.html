@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Tables in HTML</title>
+
+    <style>
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>Columu 1</th>
+        <th>Columu 2</th>
+        <th>Columu 3</th>
+    </tr>
+
+    <tr>
+        <!-- Rowspan = 2 left side -->
+        <td rowspan="2">Row 1 Cell 1</td>
+
+        <td>Row 1 Cell 2</td>
+        <td>Row 1 Cell 3</td>
+    </tr>
+
+    <tr>
+        <td>Row 2 Cell 2</td>
+        <td>Row 2 Cell 3</td>
+    </tr>
+
+    <tr>
+        <td>Row 3 Cell 1</td>
+        <td colspan="2"></td>
+    </tr>
+
+</table>
+</body>
+</html>

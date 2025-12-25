@@ -1,0 +1,49 @@
+<!-- 6) შექმენით ვებგვერდი, სადაც განთავსებულია 3 სურათი ერთ მწკრივში. თითოეულ სურათს მიეცით ჩარჩო და დაამატეთ transition. როცა მაუსს მიიტანთ სურათზე, ის ოდნავ გაიზარდოს transform: scale(1.1). გამოიყენეთ Flexbox ელემენტების გასასწორებლად და პოზიციონირების მისაცემად. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Hover Effect</title>
+  <style>
+  body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 250px;
+  border: 3px solid #333;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="gallery">
+    <img src="/Day 064/Homework/New York.webp">
+    <img src="/Day 064/Homework/New York.webp">
+    <img src="/Day 064/Homework/New York.webp">
+  </div>
+
+</body>
+</html>

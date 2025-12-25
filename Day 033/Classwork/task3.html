@@ -1,0 +1,50 @@
+<!-- 3) შექმენით 5 პარაგრაფი და მოათავსეთ ის ერთ div თეგში. სტილის მემკვიდრეობის(style inheritance) მეშვეობით გაუწერეთ მათ ერთი და იგივე ტექსტის და უკანა ფონის ფერი.-->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div სტილის მემკვიდრეობა</title>
+    <style>
+        .text-container {
+            background-color: #f0f8ff;
+            color: #3333cc;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .highlight1 {
+            color: red;
+            font-weight: bold;
+        }
+
+        .highlight2 {
+            background-color: #ffff99;
+            font-style: italic;
+        }
+
+        .highlight3 {
+            text-decoration: underline;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="text-container">
+    <p>პარაგრაფი 1: ეს ჩვეულებრივი მემკვიდრეობითი სტილია.</p>
+    <p class="highlight1">პარაგრაფი 2: განსხვავებული ფერი და თამამი ტექსტი.</p>
+    <p class="highlight2">პარაგრაფი 3: განსხვავებული ფონური ფერი და დახრილი ტექსტი.</p>
+    <p class="highlight3">პარაგრაფი 4: ხაზგასმული და დიდი ზომის ტექსტი.</p>
+    <p>პარაგრაფი 5: ისევ მემკვიდრეობითი სტილი, როგორც div-ში.</p>
+</div>
+
+<p>
+    პარაგრაფი div-ის გარეთ: სტილი არ მემკვიდრეობით მოდის div-დან.
+</p>
+
+</body>
+</html>

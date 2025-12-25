@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rank Table</title>
+<style>
+
+    body{
+        font-family: 'Arial', sans-serif;
+        background: #f6f6f6;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    table{
+        width: 600px;
+        border-collapse: collapse;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    thead th{
+        background: #0a9e7a;
+        color: white;
+        padding: 18px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    td{
+        padding: 18px;
+        font-size: 17px;
+        color: #333;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    tbody tr:nth-child(even){
+        background: #f3f3f3;
+    }
+
+    tbody tr.highlight td{
+        color: #0a9e7a;
+        font-weight: bold;
+        background: #f3f3f3;
+    }
+
+    tbody tr:last-child td{
+        border-bottom: 4px solid #0a9e7a;
+    }
+
+</style>
+
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Team</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Domenic</td>
+            <td>88,110</td>
+            <td>dcode</td>
+        </tr>
+
+        <tr class="highlight">
+            <td>2</td>
+            <td>Sally</td>
+            <td>72,400</td>
+            <td>Students</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Nick</td>
+            <td>52,300</td>
+            <td>dcode</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <style>
+    :root {
+    --primary-light-red: hsl(0, 100%, 67%);
+    --primary-orange-yellow: hsl(39, 100%, 56%);
+    --primary-green-teal: hsl(166, 100%, 37%);
+    --primary-cobalt-blue: hsl(234, 85%, 45%);
+    --gradient-light-slate-blue: hsl(252, 100%, 67%);
+    --gradient-light-royal-blue: hsl(241, 81%, 54%);
+    --gradient-violet-blue: hsla(256, 72%, 46%, 1);
+    --gradient-persian-blue: hsla(241, 72%, 46%, 0);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-pale-blue: hsl(221, 100%, 96%);
+    --neutral-light-lavender: hsl(241, 100%, 89%);
+    --neutral-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--neutral-pale-blue);
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 650px;
+    background-color: var(--neutral-white);
+    border-radius: 30px;
+    box-shadow: 10px 20px 60px rgba(61, 108, 236, 0.15);
+    overflow: hidden;
+}
+
+.result-card {
+    background: linear-gradient(to bottom, var(--gradient-light-slate-blue), var(--gradient-light-royal-blue));
+    border-radius: 30px;
+    color: var(--neutral-white);
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    padding: 38px 54px 46px;
+    text-align: center;
+}
+
+.result-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--neutral-light-lavender);
+    opacity: 0.8;
+}
+
+.result-score-circle {
+    background: linear-gradient(to bottom, var(--gradient-violet-blue), var(--gradient-persian-blue));
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.result-score-number {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.result-score-out-of {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--neutral-light-lavender);
+    opacity: 0.5;
+    margin-top: 5px;
+}
+
+.result-title {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.4;
+    color: var(--neutral-light-lavender);
+    margin-top: -10px;
+}
+
+.summary-card {
+    background-color: var(--neutral-white);
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    padding: 38px 40px 46px;
+}
+
+.summary-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--neutral-dark-gray-blue);
+    margin-bottom: 28px;
+}
+
+.summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.summary-item {
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.summary-item-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.summary-item-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.summary-item-name {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.summary-item-score {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.score-value {
+    color: var(--neutral-dark-gray-blue);
+}
+
+.score-max {
+    color: var(--neutral-dark-gray-blue);
+    opacity: 0.5;
+}
+
+.summary-reaction-item {
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.summary-reaction-item .summary-item-name {
+    color: var(--primary-light-red);
+}
+
+.summary-memory-item {
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.summary-memory-item .summary-item-name {
+    color: var(--primary-orange-yellow);
+}
+
+.summary-verbal-item {
+    background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.summary-verbal-item .summary-item-name {
+    color: var(--primary-green-teal);
+}
+
+.summary-visual-item {
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.summary-visual-item .summary-item-name {
+    color: var(--primary-cobalt-blue);
+}
+
+.continue-btn {
+    background-color: var(--neutral-dark-gray-blue);
+    border: none;
+    border-radius: 120px;
+    color: var(--neutral-white);
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.continue-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--gradient-light-slate-blue), var(--gradient-light-royal-blue));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 120px;
+}
+
+.continue-btn:hover::before {
+    opacity: 1;
+}
+
+.continue-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    max-width: 375px;
+    border-radius: 0 0 30px 30px;
+    }
+
+    .result-card {
+    border-radius: 0 0 30px 30px;
+    width: 100%;
+    }
+
+    .summary-card {
+    width: 100%;
+    }
+}
+  </style>
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+  <div class="container">
+    <div class="result-card">
+      <p class="result-card-title">Your Result</p>
+      <div class="result-score-circle">
+        <p class="result-score-number">76</p>
+        <p class="result-score-out-of">of 100</p>
+      </div>
+      <p class="result-title">Great</p>
+      <p class="description">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+
+    <div class="summary-card">
+      <p class="summary-title">Summary</p>
+      <div class="summary-items">
+        <div class="summary-item summary-reaction-item">
+          <div class="summary-item-left">
+            <img src="images/icon-reaction.svg" alt="Reaction Icon">
+            <p class="summary-item-name">Reaction</p>
+          </div>
+          <p class="summary-item-score">
+            <span class="score-value">80</span> <span class="score-max">/ 100</span>
+          </p>
+        </div>
+
+        <div class="summary-item summary-memory-item">
+          <div class="summary-item-left">
+            <img src="images/icon-memory.svg" alt="Memory Icon">
+            <p class="summary-item-name">Memory</p>
+          </div>
+          <p class="summary-item-score">
+            <span class="score-value">92</span> <span class="score-max">/ 100</span>
+          </p>
+        </div>
+
+        <div class="summary-item summary-verbal-item">
+          <div class="summary-item-left">
+            <img src="images/icon-verbal.svg" alt="Verbal Icon">
+            <p class="summary-item-name">Verbal</p>
+          </div>
+          <p class="summary-item-score">
+            <span class="score-value">61</span> <span class="score-max">/ 100</span>
+          </p>
+        </div>
+
+        <div class="summary-item summary-visual-item">
+          <div class="summary-item-left">
+            <img src="images/icon-visual.svg" alt="Visual Icon">
+            <p class="summary-item-name">Visual</p>
+          </div>
+          <p class="summary-item-score">
+            <span class="score-value">72</span> <span class="score-max">/ 100</span>
+          </p>
+        </div>
+      </div>
+      
+      <button class="continue-btn"><span>Continue</span></button>
+    </div>
+  </div>
+</body>
+</html>

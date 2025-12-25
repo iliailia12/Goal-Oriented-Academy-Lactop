@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #d33cff, #ff4fa3);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-box {
+    background: #fff;
+    width: 600px;
+    padding: 40px;
+    border-radius: 6px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 15px;
+    background: #fafafa;
+}
+
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+
+textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.btn {
+    margin-top: 25px;
+    width: 120px;
+    padding: 12px;
+    border: none;
+    color: white;
+    background: #333;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #000;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <form class="form-box">
+        <h2>Contact Us</h2>
+
+        <label>YOUR NAME *</label>
+        <div class="name-row">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+        </div>
+
+        <label>EMAIL ADDRESS *</label>
+        <input type="email" placeholder="Eg. example@email.com">
+
+        <label>PHONE NUMBER</label>
+        <input type="text" placeholder="Eg. +1 800 000000">
+
+        <label>MESSAGE *</label>
+        <textarea placeholder="Please enter your comments..."></textarea>
+
+        <button type="submit" class="btn">Submit →</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!-- 2) შექმენით ვებ-საიტი ნებისმიერი თემატიკაზე, გამოიყენეთ flexbox-ის განლაგების ტექნოლოგია და მისი თვისებები.  -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Travel World</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+
+    header {
+        background: #2d3e50;
+        color: #fff;
+        padding: 20px 40px;
+        display: flex;                
+        justify-content: space-between;  
+        align-items: center;        
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;         
+        gap: 20px;     
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+
+    .hero {
+        height: 60vh;                 
+        background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1500&q=80') center/cover;
+        display: flex;                 
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        text-shadow: 0 0 10px black;
+        text-align: center;
+        padding: 20px;
+    }
+
+
+    .cards {
+        display: flex;       
+        flex-wrap: wrap;    
+        gap: 20px;          
+        padding: 40px;
+        justify-content: center;
+    }
+
+    .card {
+        background: white;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #00000020;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+        flex: 1;  
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #2d3e50;
+    }
+
+    .card p {
+        color: #555;
+    }
+
+    
+    footer {
+        background: #2d3e50;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>TravelWorld</h1>
+    <nav>
+        <ul>
+            <li><a href="#">მთავარი</a></li>
+            <li><a href="#">მარშრუტები</a></li>
+            <li><a href="#">ბლოგი</a></li>
+            <li><a href="#">კონტაქტი</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>გაიემგზავრე ოცნების მოგზაურობაში</h2>
+    <p>აღმოაჩინე ყველაზე ლამაზი ადგილები მსოფლიოს გარშემო</p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>ბალი</h3>
+            <p>ექსოტიკური სანაპიროები, ატმოსფერო და ბუნებრივი საოცრებები.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>პარიზი</h3>
+            <p>ქალაქი სიყვარულის, ხელოვნებისა და ულამაზესი არქიტექტურის.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?auto=format&fit=crop&w=800&q=80">
+        <div class="card-content">
+            <h3>სამხრეთ კორეა</h3>
+            <p>ტექნოლოგიები, ბუნება და უნიკალური კულტურა.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2025 TravelWorld • ყველა უფლება დაცულია
+</footer>
+</body>
+</html>

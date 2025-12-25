@@ -1,0 +1,172 @@
+<!-- 1)შექმენით single page ვებსაიტი ფრინველების შესახებ,უნდა გქონდეთ შედარებით დიდი ვებსაიტი,საიტზე უნდა გქონდეთ 5 სხვადასხვა ფრინველზე ინფორმაცია,თავისი ფოტოებით და სათაურებით,lorem ები არ გამოიყენოთ,გამოიყენეთ ვიკიპედია რომ რეალური გამოვიდეს,გადმოიტანეთ რაც შეიძლება მეტი ტექსტური ინფორმაცია ამ ფრინველების შესახებ რომ ვებსაიტი იყოს დიდი მოცულობით,ვებსაიტის თავში უნდა გქონდეთ ნავიგაციის მენიუ რომელიც ჩამოგიყვანს თითოეული ფრინველის ინფორმაციაზე(გამოიყენეთ id ატრიბუტი),ასევე გამოიყენეტ text formatting თეგები რომლითაც შეცვლით მნიშვნელოვან ინფორმაციას რომელიც ტექსტებში იქნება მოცემული,ასევე ვებსაიტის ქვემოთ სულ ბოლოში უნდა გქონდეთ ღილაკი რომელზე დაჭერის შედეგადაც აგიყვანთ სულ ზემოთ ნავიგაციის მენიუსთან -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <title>ფრინველები</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      margin-right: 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    section img {
+      max-width: 300px;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .important {
+      font-weight: bold;
+      color: #2a7ae2;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+    #back-to-top {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="top">
+    <h1>ფრინველების საოცარი სამყარო</h1>
+    <nav>
+      <a href="#bald-eagle">ლურჯთავიანი არწივი</a>
+      <a href="#golden-eagle">ოქროს არწივი</a>
+      <a href="#peregrine-falcon">პერეგრინი</a>
+      <a href="#sparrowhawk">სპაროუახოკი</a>
+      <a href="#barn-owl">სტაგნარი ბუ</a>
+    </nav>
+  </header>
+
+  <!-- ფრინველის 1: ლურჯთავიანი არწივი -->
+  <section id="bald-eagle">
+    <h2>ლურჯთავიანი არწივი (Bald Eagle)</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Haliaeetus_leucocephalus_-Alaska_-flying-8.jpg" alt="Bald Eagle" />
+    <p>
+      ლურჯთავიანი არწივი (თქვენ შეიძლება ასევე მოისმინოთ როგორც <span class="important">Haliaeetus leucocephalus</span>) არის დიდი მტაცებელი ფრინველი, რომელიც ნაცვლად „ლურჯთავიანი“ სახელი მიიღო არა თავის ლаковიდან, არამედ სიტყვა „bald“ ძველი აზრისგან, რომელიც გულისხმობდა „თეთრს თავზე“. :contentReference[oaicite:0]{index=0}  
+    </p>
+    <p>
+      ზრდასრულები ძირითადად ყავისფერბუმბულებიანია და აქვთ თეთრი თავი და კუდი. :contentReference[oaicite:1]{index=1}  
+    </p>
+    <p>
+      ისინი არიან ძლიერი ფრენელები და სჭრიან სითბურ დინრეებზე (thermal currents), რის საშუალებითაც დიდ მანძილებზე ერთიანად დაფრინავენ. :contentReference[oaicite:2]{index=2}  
+    </p>
+    <p>
+      ლურჯთავიანი არწივები სამხრეთ-დასავლეთ ამერიკაში განსაკუთრებით მნიშვნელოვანია და ხშირად გამოიყენება როგორც ეროვნული სიმბოლო. :contentReference[oaicite:3]{index=3}  
+    </p>
+  </section>
+
+  <!-- ფრინველის 2: ოქროს არწივი -->
+  <section id="golden-eagle">
+    <h2>ოქროს არწივი (Golden Eagle)</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Golden_eagle_in_flight_-_5.jpg" alt="Golden Eagle" />
+    <p>
+      ოქროს არწივი (<span class="important">Aquila chrysaetos</span>) ერთ-ერთი ყველაზე ცნობადი და ფართოდ გავრცელებული მტაცებელი ფრინველია ჩრდილოეთ ნახევარსფეროში. :contentReference[oaicite:4]{index=4}  
+    </p>
+    <p>
+      მათი ბუმბული ძირითადად ღია ყავისფერი — განსხვავებით, თავანთი კიდურების მიდამოებში უფრო _ოქროსფეროვანი_ შეფერილობა აქვთ, რაც მათ სახელსაც განაპირობებს. :contentReference[oaicite:5]{index=5}  
+    </p>
+    <p>
+      ოქროს არწივები ხშირად აგრძელებენ ერთსა და იმავე ტერიტორიაზე ბუდეს რამდენიმე წლის განმავლობაში და აგებდნენ მას კლდეებზე ან მაღალ ადგილებზე. :contentReference[oaicite:6]{index=6}  
+    </p>
+    <p>
+      ბუდედ აფრქვევენ დაახლოებით 1–4 კვერცხს და ინკუბაცია გრძელდება დაახლოებით 6 კვირა. :contentReference[oaicite:7]{index=7}  
+    </p>
+  </section>
+
+  <!-- ფრინველის 3: პერეგრინი (პერეგრინული ფალკონი) -->
+  <section id="peregrine-falcon">
+    <h2>პერეგრინული ფალკონი (Peregrine Falcon)</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Falco_peregrinus_good_-_Christopher_Watson.jpg" alt="Peregrine Falcon" />
+    <p>
+      პერეგრინი (<span class="important">Falco peregrinus</span>) არის აღნიშნული როგორც ერთ-ერთი ყველაზე სწრაფი ფრინველი მსოფლიოში — მათი დივერსული სიჩქარე დივერსის დროს აღწერილია საკმაოდ მაღალი მაჩვენებლებით. :contentReference[oaicite:8]{index=8}  
+    </p>
+    <p>
+      მათი დიეტა ძალიან მრავალფეროვანია — ისინი ნადირობენ სხვა ფრინველებს, თეთრ თეთრ ჩვეულ ფრინველებით დაწყებული და წყალფრინველებამდე. :contentReference[oaicite:9]{index=9}  
+    </p>
+    <p>
+      მათ აქვთ განსაკუთრებული ფრენის ტექნიკა — ნადირობის დროს ხშირად აკეთებენ სწრაფ ვერტიკალურ ყვინთავდა (dive), რაც მათ საშუალებას აძლევს _აღმოაჩინონ სხვა ფრინველები მაღალი სიჩქარით_. :contentReference[oaicite:10]{index=10}  
+    </p>
+    <p>
+      პერეგრინული ფალკონები შეიძლება იცხოვრონ ბუნებაში, კლდეებზე, მაგრამ ისინი ხშირად ადაპტირდებიან ქალაქებთან — თუნდაც ცათამბჯენების გვერდით ბუდობენ. :contentReference[oaicite:11]{index=11}  
+    </p>
+  </section>
+
+  <!-- ფრინველის 4: სპაროუახოკი (Eurasian Sparrowhawk) -->
+  <section id="sparrowhawk">
+    <h2>ევრაზიული სპაროუახოკი (Eurasian Sparrowhawk)</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Accipiter_nisus_-_female.jpg" alt="Eurasian Sparrowhawk" />
+    <p>
+      _Accipiter nisus_, ხშირად ცნობილი როგორც „ევრაზიული სპაროუახოკი“, არის პატარა მტაცებელი ფრინველი ოჯახიდან Accipitridae. :contentReference[oaicite:12]{index=12}  
+    </p>
+    <p>
+      **ზომით განსხვავება:** ♀ ქალი სპაროუახოკები შესაძლოა იყვნენ დაახლოებით 25%-ით _დიდნი ვიდრე ♂ მამაკაცები_ — ეს საკმაოდ დიდი სქესობრივი დიმორფიზმია მტაცებელ ფრინველებს შორის. :contentReference[oaicite:13]{index=13}  
+    </p>
+    <p>
+      მათი ცხოვრების არეალი მოიცავს ტყეებს, ნისლეულოვან ველებს, მაგრამ ასევე ისინი ხშირად გვხვდებიან ქალაქების ბაღებში — სადაც მათთვის ადვილად ხელმისაწვდომია ხუთფრთიანი პატარა ფრინველები, რომლებსაც ნადირობენ. :contentReference[oaicite:14]{index=14}  
+    </p>
+    <p>
+      კვერცხების დადების შემდეგ, ჩიჩინების გამოჩენა ხდება დაახლოებით **33 დღეში**, ხოლო ბუდიდან გაფრენა – 24–28 დღეში. :contentReference[oaicite:15]{index=15}  
+    </p>
+  </section>
+
+  <!-- ფრინველის 5: სტაგნარი ბუ (Barn Owl) -->
+  <section id="barn-owl">
+    <h2>სტაგნარი ბუ (Barn Owl)</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Tyto_alba_-England-8.jpg" alt="Barn Owl" />
+    <p>
+      სტაგნარი ბუ, რომელიც ხშირად ეხლა ცნობილია როგორც _Tyto alba_, არის ძალიან ფართოდ გავრცელებული ბუ‑ტარისპექტივი ფრინველი. :contentReference[oaicite:16]{index=16}  
+    </p>
+    <p>
+      მათ აქვთ **გულის ფორმის, მკვეთრად გამოხატული სახის დისკო**, რაც მათ სხვა ბუების სახეობებისგან გამოარჩევს. :contentReference[oaicite:17]{index=17}  
+    </p>
+    <p>
+      ბუებს აქვთ ძლიერი მკლავები და მწვავე ნაჭრისებრი თათები, რაც მათ საშუალებას აძლევს ნადირობდნენ ღამით მცირე ძუძუმწოვრებზე. :contentReference[oaicite:18]{index=18}  
+    </p>
+    <p>
+      ისინი ხშირად ბუდობენ ადამიანის მიერ შექმნილ გამაგრებულ ან გადატკეპნილ სივრცეებში —მაგალითად საწყობებში და შენობების კიდეებში. :contentReference[oaicite:19]{index=19}  
+    </p>
+  </section>
+
+  <footer>
+    <button id="back-to-top" onclick="window.scrollTo({top:0, behavior: 'smooth'});">
+      ზემოთ დაბრუნება
+    </button>
+  </footer>
+
+</body>
+</html>
+
+
+<!-- გული დამეწვა და css დავამატე -->

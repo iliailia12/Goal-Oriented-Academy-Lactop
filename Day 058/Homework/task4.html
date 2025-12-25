@@ -1,0 +1,158 @@
+<!-- 4) ივარჯშეთ flex განლაგების გამოყენებაზე და ააწყეთ ვებ-საიტები თქვენს გემოვნებაზე <3 -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox Practice Website</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+        background: #333;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 { font-size: 28px; }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover { color: #ffcc00; }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+        height: 300px;
+        background: linear-gradient(#4a90e2, #367dc1);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero h2 { font-size: 40px; }
+    .hero p { font-size: 20px; margin-top: 10px; }
+
+    /* ===== MAIN CONTENT ===== */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 40px;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 1 1 calc(33.3% - 40px);
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #00000010;
+        transition: 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 20px #00000025;
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+        color: #4a90e2;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+        margin-top: 40px;
+        padding: 20px;
+        background: #333;
+        color: white;
+        text-align: center;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+        .card {
+            flex: 1 1 calc(50% - 40px);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .card {
+            flex: 1 1 100%;
+        }
+
+        nav ul {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>FlexBoxes</h1>
+    <nav>
+        <ul>
+            <li><a href="#">მთავარი</a></li>
+            <li><a href="#">სერვისები</a></li>
+            <li><a href="#">ჩვენს შესახებ</a></li>
+            <li><a href="#">კონტაქტი</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>სალამი Flexbox სამყაროში!</h2>
+    <p>ივარჯიშე flex განლაგებაზე და ააწყე შენი სტილის ვებსაიტები 💙</p>
+</section>
+
+<section class="cards">
+    <div class="card">
+        <h3>💡 მარტივი განლაგება</h3>
+        <p>Flexbox გეხმარება ელემენტების მარტივად დალაგებაში — ჰორიზონტალურად და ვერტიკალურად.</p>
+    </div>
+
+    <div class="card">
+        <h3>📱 Responsive დიზაინი</h3>
+        <p>ელემენტები ავტომატურად ეწყობიან სხვადასხვა ეკრანებზე.</p>
+    </div>
+
+    <div class="card">
+        <h3>⚡ სწრაფი განვითარება</h3>
+        <p>Flex გაძლევს საშუალებას ბევრად სწრაფად ააწყო თანამედროვე UI.</p>
+    </div>
+</section>
+
+<footer>
+    Flexbox გაკვეთილი • შექმნილია სიყვარულით ❤️
+</footer>
+
+</body>
+</html>

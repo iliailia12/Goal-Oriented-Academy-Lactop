@@ -1,0 +1,124 @@
+<!-- 2) შექმენით პროდუქტების მაღაზიის საიტი, გამოიყენეთ ყველა აქამდე ნასწავლი მასალა და დაამატეთ ამ საიტს პროდუქტის დამატების ფორმა. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Shop</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .product-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 250px;
+            display: inline-block;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .product-box img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        form {
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid black;
+            width: 350px;
+            border-radius: 5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 7px;
+            margin-bottom: 12px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Online Shop</h1>
+
+    <h2>Available Products</h2>
+
+    <!-- Product Card 1 -->
+    <div class="product-box">
+        <img src="https://via.placeholder.com/200" alt="Product Image">
+        <h3>Smartphone</h3>
+        <p>Price: $299</p>
+        <button>Buy</button>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="product-box">
+        <img src="https://via.placeholder.com/200" alt="Product Image">
+        <h3>Headphones</h3>
+        <p>Price: $49</p>
+        <button>Buy</button>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="product-box">
+        <img src="https://via.placeholder.com/200" alt="Product Image">
+        <h3>Laptop</h3>
+        <p>Price: $899</p>
+        <button>Buy</button>
+    </div>
+
+
+    <h2>Add New Product</h2>
+
+    <form>
+        <label for="productname">Product Name</label>
+        <input type="text" id="productname" name="productname"
+               placeholder="Enter product name" required>
+
+        <label for="price">Price ($)</label>
+        <input type="number" id="price" name="price"
+               placeholder="Enter price" required>
+
+        <label for="img">Product Image URL</label>
+        <input type="url" id="img" name="img"
+               placeholder="Enter image link" required>
+
+        <label>Category</label>
+        <select name="category" required>
+            <option value="">Choose category</option>
+            <option value="electronics">Electronics</option>
+            <option value="lifestyle">Lifestyle</option>
+            <option value="kitchen">Kitchen</option>
+        </select>
+
+        <label>Is product new?</label><br><br>
+        <input type="radio" name="condition" value="new" required> New
+        <input type="radio" name="condition" value="used"> Used
+        <br><br>
+
+        <input type="checkbox" required>
+        I confirm that this product information is correct
+        <br><br>
+
+        <button type="submit">Add Product</button>
+    </form>
+
+</body>
+</html>

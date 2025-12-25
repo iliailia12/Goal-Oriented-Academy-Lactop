@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Profile Card</title>
+
+<style>
+    /* --- GLOBAL --- */
+    body {
+        background: #141414;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;   
+        align-items: center;     
+        height: 100vh;           
+        margin: 0;
+    }
+
+    /* --- CARD CONTAINER --- */
+    .card {
+        background: #1f1f1f;
+        width: 330px;
+        padding: 40px 30px;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* --- PROFILE IMAGE --- */
+    .card img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* --- TEXT SECTION --- */
+    .name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .location {
+        font-size: 14px;
+        color: #b7ff59;
+    }
+
+    .about {
+        font-size: 13px;
+        color: #cccccc;
+    }
+
+    /* --- BUTTONS --- */
+    .links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .links a {
+        background: #333333;
+        color: white;
+        text-decoration: none;
+        padding: 12px 0;
+        border-radius: 8px;
+        font-size: 14px;
+        transition: 0.2s;
+        font-weight: bold;
+    }
+
+    .links a:hover {
+        background: #464646;
+    }
+</style>
+</head>
+<body>
+<div class="card">
+    <img src="avatar-jessica.jpeg" alt="Profile">
+    <div class="name">Jessica Randall</div>
+    <div class="location">London, United Kingdom</div>
+    <div class="about">"Front-end developer and avid reader."</div>
+    <div class="links">
+        <a href="#">GitHub</a>
+        <a href="#">Frontend Mentor</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</div>
+</body>
+</html>

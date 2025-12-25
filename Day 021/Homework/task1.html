@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+    <style>
+        body{
+            background: #e6e6e6;
+            font-family: Arial;
+        }
+        .form-container{
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 5px;
+        }
+        label{
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input{
+            width: 220px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        h2{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .gender input{
+            width: auto;
+            margin-right: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Registration form</h2>
+
+    <form>
+
+        <label>First Name</label>
+        <input type="text"><br>
+
+        <label>Last Name</label>
+        <input type="text"><br>
+
+        <label>Nick Name</label>
+        <input type="text"><br>
+
+        <label>e-mail</label>
+        <input type="email"><br>
+
+        <label>Password</label>
+        <input type="password"><br>
+
+        <label>Date of Birth</label>
+        <input type="date"><br>
+
+        <label>Gender</label>
+        <span class="gender">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Others
+        </span>
+
+    </form>
+</div>
+
+</body>
+</html>

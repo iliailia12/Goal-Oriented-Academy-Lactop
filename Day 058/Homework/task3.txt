@@ -1,0 +1,2 @@
+3) გაიარეთ flexfroggy 12 Level-ის ჩათვლით:
+-- https://flexboxfroggy.com/ --

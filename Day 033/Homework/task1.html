@@ -1,0 +1,133 @@
+<!-- შექმენით ერთ გვერდიანი საიტი თავისუფალ თემაზე.
+
+საიტს აუცილებლად უნდა ჰქონდეს: 
+header-ი, სადაც იქნება ლოგო, მთავარი სათაური და ნავიგაცია თითოეულ სექციაზე(ნაციგაცია უნდა მოხდეს იმავე გვერდზე, ანუ ერთგვერდიანი ნავიგაცია).
+main თეგი 5 სექციით(<section>). თითოეულ სექციას უნდა ჰქონდეს თავისი სათაური(h2). ბოლო სექციაში გამოიტანეთ საიტის თემასთან დაკავშირებული ცხრილი(table).
+footer თეგი, სადაც გამოიტანთ იმავე ნავიგაციას, რაც header-ში გქონდათ და საკონტაქტო ინფორმაციას. email, tel, location.
+
+გამოიყენეთ div-თეგიც სექციებში ელემენტების გამოსაყოფათ და გასტილეთ საიტი ყველა ნასწავლი css კუთვნილების გამოყენებით -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი ჰობი</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= Header ================= -->
+<header>
+    <div class="logo">
+        <img src="https://via.placeholder.com/50" alt="ლოგო">
+        <h1>ჩემი ჰობი</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">მთავარი</a></li>
+            <li><a href="#section2">ჩემი გამოცდილება</a></li>
+            <li><a href="#section3">ფოტოები</a></li>
+            <li><a href="#section4">ვიდეო</a></li>
+            <li><a href="#section5">ცხრილი</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= Main ================= -->
+<main>
+
+    <!-- Section 1 -->
+    <section id="section1">
+        <div class="content">
+            <h2>მთავარი</h2>
+            <p>ეს ჩემი ჰობის გვერდია, სადაც შეგიძლიათ იხილოთ ჩემი გამოცდილება, ფოტოები და ვიდეოები.</p>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section2">
+        <div class="content">
+            <h2>ჩემი გამოცდილება</h2>
+            <p>აქ აღწერილია ჩემი საქმიანობა და მიღწევები ამ ჰობის სფეროში.</p>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section3">
+        <div class="content">
+            <h2>ფოტოები</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/150" alt="ფოტო 1">
+                <img src="https://via.placeholder.com/150" alt="ფოტო 2">
+                <img src="https://via.placeholder.com/150" alt="ფოტო 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="section4">
+        <div class="content">
+            <h2>ვიდეო</h2>
+            <video width="320" height="240" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                თქვენი ბრაუზერი ვერ უჭერს ამ ვიდეოს მხარდაჭერას.
+            </video>
+        </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="section5">
+        <div class="content">
+            <h2>ცხრილი</h2>
+            <table>
+                <tr>
+                    <th>ჰობის ტიპი</th>
+                    <th>მიუწვდომელი დრო (საათები/კვირაში)</th>
+                    <th>პრიორიტეტი</th>
+                </tr>
+                <tr>
+                    <td>ფოტოგრაფია</td>
+                    <td>5</td>
+                    <td>მაღალი</td>
+                </tr>
+                <tr>
+                    <td>პლანინგი</td>
+                    <td>3</td>
+                    <td>საშუალო</td>
+                </tr>
+                <tr>
+                    <td>საგამოცდო პრაქტიკა</td>
+                    <td>2</td>
+                    <td>დაბალი</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<!-- ================= Footer ================= -->
+<footer>
+    <div class="footer-nav">
+        <ul>
+            <li><a href="#section1">მთავარი</a></li>
+            <li><a href="#section2">ჩემი გამოცდილება</a></li>
+            <li><a href="#section3">ფოტოები</a></li>
+            <li><a href="#section4">ვიდეო</a></li>
+            <li><a href="#section5">ცხრილი</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+        <p>Email: example@mail.com</p>
+        <p>Tel: +995 555 123456</p>
+        <p>Location: თბილისი, საქართველო</p>
+    </div>
+</footer>
+
+</body>
+</html>

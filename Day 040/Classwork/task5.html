@@ -1,0 +1,42 @@
+<!-- 5) შექმენით 3 div ელემენტი, გასტილეთ ისინი css-ში ნასწავლი თვისებების დახმარებით, ოღონდ გაითვალისწინეთ, 1 div უნდა იყოს გასტილული tag selector-ის მეშვეობით, 1 ცალი class selector-ის და 1 ცალი id selector-ის მეშვეობით -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Div Selectors Example</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+
+        .special-div {
+            background-color: lightgreen;
+            color: white;
+            border: 2px solid green;
+        }
+
+        #unique-div {
+            background-color: orange;
+            color: black;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>Tag Selector Div</div>
+
+    <div class="special-div">Class Selector Div</div>
+
+    <div id="unique-div">ID Selector Div</div>
+
+</body>
+</html>

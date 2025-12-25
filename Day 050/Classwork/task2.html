@@ -1,0 +1,94 @@
+<!-- 2) შექმენით 5 Button Tag და გასტილეთ Hover Effect-ით. (P.S ყველას სხვადასხვანაირი სტილი უნდა ჰქონდეს) -->
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Buttons Hover Effects</title>
+<style>
+    body {
+        background: #f1f1f1;
+        font-family: Arial;
+        padding: 40px;
+        text-align: center;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 18px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .btn1 {
+        background: crimson;
+        color: #fff;
+        border: none;
+    }
+    .btn1:hover {
+        transform: scale(1.15);
+        background: rgb(180, 0, 40);
+    }
+
+
+    .btn2 {
+        background: royalblue;
+        color: #fff;
+        border: none;
+    }
+    .btn2:hover {
+        box-shadow: 0 0 15px royalblue;
+        transform: translateY(-4px);
+    }
+
+
+    .btn3 {
+        background: #fff;
+        color: green;
+        border: 3px solid green;
+    }
+    .btn3:hover {
+        background: green;
+        color: #fff;
+    }
+
+
+    .btn4 {
+        background: orange;
+        color: #fff;
+        border: none;
+    }
+    .btn4:hover {
+        transform: rotate(-5deg) scale(1.1);
+    }
+
+
+    .btn5 {
+        background: purple;
+        color: #fff;
+        border: none;
+    }
+    .btn5:hover {
+        box-shadow: 0 0 20px purple;
+        transform: scale(1.12);
+    }
+
+</style>
+
+</head>
+<body>
+
+<h2>5 Different Hover Buttons</h2>
+
+<button class="btn1">Button 1</button>
+<button class="btn2">Button 2</button>
+<button class="btn3">Button 3</button>
+<button class="btn4">Button 4</button>
+<button class="btn5">Button 5</button>
+
+</body>
+</html>

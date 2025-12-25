@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Events Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            background-color: #f0f8ff;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            margin: 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #button1 {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        #button1:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        #button2 {
+            background-color: #008CBA;
+            color: white;
+        }
+
+        #button2:hover {
+            background-color: #007bb5;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <button id="button1">Click Me!</button>
+    <button id="button2">Touch Me!</button>
+    <script>
+        const btn1 = document.getElementById("button1");
+        btn1.addEventListener("click", function() {
+            alert("Hello JavaScript!");
+        });
+
+        const btn2 = document.getElementById("button2");
+        btn2.addEventListener("touchstart", function() {
+            alert("This is alert");
+        });
+
+        btn2.addEventListener("click", function() {
+            alert("This is alert");
+        });
+    </script>
+</body>
+</html>

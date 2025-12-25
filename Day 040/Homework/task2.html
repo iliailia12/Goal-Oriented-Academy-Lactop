@@ -1,0 +1,47 @@
+<!-- 2) შექმენით 5 ცალი button, აქედან css-ში ჩვეულებირვ წამოიღეთ tag selector-ით ყველა button და გასტილეთ ისინი (color; background-color). პირველ 3 button-ს შეუქმენით და გადაეცით ერთნაირი class, და class selector-ის მეშვეობით გასტილეთ ისინი სხვანაირად. 4-ე button-ს კი გადაეცით id, და გასტილეთ იგი უნიკალურად id selector-ის მეშვეობით, 5-ე button-ი კი დატოვეთ ისე :>-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Selectors Example</title>
+    <style>
+        button {
+            color: white;
+            background-color: gray;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .group-button {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+
+        #special-button {
+            background-color: orange;
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="group-button">Button 1</button>
+    <button class="group-button">Button 2</button>
+    <button class="group-button">Button 3</button>
+
+    <button id="special-button">Button 4</button>
+
+    <button>Button 5</button>
+
+</body>
+</html>
