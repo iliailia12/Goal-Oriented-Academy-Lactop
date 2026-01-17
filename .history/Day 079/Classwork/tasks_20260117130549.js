@@ -149,42 +149,12 @@ else{
     console.log('invalid day ')
 }
 
-
-
 // ternary
-week_daye === 1 ? console.log('ორშაბათი') :
-week_daye === 2 ? console.log('სამშაბათი') :
-week_daye === 3 ? console.log('ოთხშაბათი') :
-week_daye === 4 ? console.log('ხუთშაბათი') :
-week_daye === 5 ? console.log('პარასკევი') :
-week_daye === 6 ? console.log('შაბათი') :
-week_daye === 7 ? console.log('კვირა') :
+wee === 1 ? console.log('იანვარი') :
+wee === 2 ? console.log('თებერვალი') :
+wee === 3 ? console.log('მარტი') :
+wee === 4 ? console.log('აპრილი') :
+wee === 5 ? console.log('მაისი') :
+wee === 6 ? console.log('ივნისი') :
+wee === 7 ? console.log('ივლისი') :
 console.log('არასწორი კვირის დღე');
-
-
-// switch case
-switch (week_daye) {
-  case 1:
-    console.log('ორშაბათი');
-    break;
-  case 2:
-    console.log('სამშაბათი');
-    break;
-  case 3:
-    console.log('ოთხშაბათი');
-    break;
-  case 4:
-    console.log('ხუთშაბათი');
-    break;
-  case 5:
-    console.log('პარასკევი');
-    break;
-  case 6:
-    console.log('შაბათი');
-    break;
-  case 7:
-    console.log('კვირა');
-    break;
-  default:
-    console.log('არასწორი კვირის დღე');
-}
