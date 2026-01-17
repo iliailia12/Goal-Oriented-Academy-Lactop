@@ -103,19 +103,15 @@ switch (month){
 
 // ტერნარი ოპერატორი?? ? :
 
-month === 1 ? console.log('იანვარი') :
-month === 2 ? console.log('თებერვალი') :
-month === 3 ? console.log('მარტი') :
-month === 4 ? console.log('აპრილი') :
-month === 5 ? console.log('მაისი') :
-month === 6 ? console.log('ივნისი') :
-month === 7 ? console.log('ივლისი') :
-month === 8 ? console.log('აგვისტო') :
-month === 9 ? console.log('სექტემბერი') :
-month === 10 ? console.log('ოქტომბერი') :
-month === 11 ? console.log('ნოემბერი') :
-month === 12 ? console.log('დეკემბერი') :
-console.log('არასწორი თვე');
-
-
-// კვირის დღეები
+month === 1? console.log('იანვარი'):
+month === 2? console.log('თებერვალი'):
+month === 3? console.log('მარტი'):
+month === 4? console.log('აპრილი'):
+month === 5? console.log('მაისი'):
+month === 6? console.log('ივნისი'):
+month === 7? console.log('ივლისი'):
+month === 8? console.log('აგვისტო'):
+month === 9? console.log('სექტ'):
+month === 10? console.log('იანვარი'):
+month === 11? console.log('იანვარი'):
+month === 12? console.log('იანვარი'):

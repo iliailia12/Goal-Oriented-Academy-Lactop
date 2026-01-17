@@ -81,41 +81,12 @@ switch (month){
         console.log('ივნისი')
     case 7 :
         console.log('ივლისი')
-        break
     case 8 :
         console.log('აგვისტო')
-        break
     case 9 :
         console.log('სექტემბერი')
-        break
     case 10:
         console.log('ოქტომბერი')
-        break
     case 11 :
-        console.log('ნოემბერი')
-        break
-    case 12 :
-        console.log('დეკემბერი')
-        break
-    default:
-        console.log('invalid month არასწორი რიცხვი შეიტანე 1 12')
+        console.log
 }
-
-// ტერნარი ოპერატორი?? ? :
-
-month === 1 ? console.log('იანვარი') :
-month === 2 ? console.log('თებერვალი') :
-month === 3 ? console.log('მარტი') :
-month === 4 ? console.log('აპრილი') :
-month === 5 ? console.log('მაისი') :
-month === 6 ? console.log('ივნისი') :
-month === 7 ? console.log('ივლისი') :
-month === 8 ? console.log('აგვისტო') :
-month === 9 ? console.log('სექტემბერი') :
-month === 10 ? console.log('ოქტომბერი') :
-month === 11 ? console.log('ნოემბერი') :
-month === 12 ? console.log('დეკემბერი') :
-console.log('არასწორი თვე');
-
-
-// კვირის დღეები

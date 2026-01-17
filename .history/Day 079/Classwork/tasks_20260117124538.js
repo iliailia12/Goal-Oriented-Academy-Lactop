@@ -115,7 +115,4 @@ month === 9 ? console.log('სექტემბერი') :
 month === 10 ? console.log('ოქტომბერი') :
 month === 11 ? console.log('ნოემბერი') :
 month === 12 ? console.log('დეკემბერი') :
-console.log('არასწორი თვე');
-
-
-// კვირის დღეები
+console.log('არასწორი თვე')
