@@ -133,14 +133,14 @@ else if (week_daye == 3){
     console.log('ოთხშაბათი')
 }
 else if (week_daye == 4){
-    console.log('ხუთშაბათი')
+    console.log('')
 }
 else if (week_daye == 5){
-    console.log('პარასკევი')
+    console.log('სამშაბათი')
 }
 else if (week_daye == 6){
-    console.log('შაბათი')
+    console.log('სამშაბათი')
 }
 else if (week_daye == 7){
-    console.log('კვირა')
+    console.log('სამშაბათი')
 }

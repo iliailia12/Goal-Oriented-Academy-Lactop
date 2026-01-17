@@ -123,24 +123,4 @@ console.log('არასწორი თვე');
 let week_daye = 5
 
 
-if (week_daye == 1){
-    console.log('ორშაბათი')
-}
-else if (week_daye == 2){
-    console.log('სამშაბათი')
-}
-else if (week_daye == 3){
-    console.log('ოთხშაბათი')
-}
-else if (week_daye == 4){
-    console.log('ხუთშაბათი')
-}
-else if (week_daye == 5){
-    console.log('პარასკევი')
-}
-else if (week_daye == 6){
-    console.log('შაბათი')
-}
-else if (week_daye == 7){
-    console.log('კვირა')
-}
+if (week_daye == 1) co

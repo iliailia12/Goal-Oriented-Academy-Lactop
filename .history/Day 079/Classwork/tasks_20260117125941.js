@@ -142,5 +142,5 @@ else if (week_daye == 6){
     console.log('შაბათი')
 }
 else if (week_daye == 7){
-    console.log('კვირა')
+    console.log('სამშაბათი')
 }
