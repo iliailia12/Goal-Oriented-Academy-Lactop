@@ -1,0 +1,9 @@
+// 2) შექმენით arrow function რომელსაც დაარქმევთ getAge, მიიღებს პარამეტრად ასაკს და შემდეგ დააბრუნებს გაორმაგებულ რიცხვით მნიშვნელობას 
+
+
+let getAge = (age)=>{
+    return gae*2
+}
+let getAge = (age) => {
+    return age * 2;
+}
