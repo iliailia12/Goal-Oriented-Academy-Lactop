@@ -15,6 +15,4 @@ let arrow = function(age){
 }
 
 
-add = (a,b) =>{
-    return a+b
-}
+leg
