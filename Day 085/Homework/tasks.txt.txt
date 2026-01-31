@@ -1,0 +1,25 @@
+ვისაც არ გაქვთ შემდეგი ამოცანები შესრულებული, აუცილებლად შეასრულეთ.
+
+8 Kyu
+
+https://www.codewars.com/kata/57f780909f7e8e3183000078/train/python
+https://www.codewars.com/kata/5861d28f124b35723e00005e/train/python
+https://www.codewars.com/kata/576b93db1129fcf2200001e6/train/python
+https://www.codewars.com/kata/56b1f01c247c01db92000076/train/python
+https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/python
+https://www.codewars.com/kata/555a67db74814aa4ee0001b5/train/python
+
+7 Kyu
+
+https://www.codewars.com/kata/5412509bd436bd33920011bc/train/python
+https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/python
+https://www.codewars.com/kata/559590633066759614000063/train/python
+https://www.codewars.com/kata/539ee3b6757843632d00026b/train/python
+https://www.codewars.com/kata/526c7363236867513f0005ca/train/python
+https://www.codewars.com/kata/5680781b6b7c2be860000036/train/python
+
+6 Kyu
+
+https://www.codewars.com/kata/541c8630095125aba6000c00/train/python
+https://www.codewars.com/kata/54da539698b8a2ad76000228/train/python
+https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/python
