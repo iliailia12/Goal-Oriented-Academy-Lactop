@@ -1,0 +1,7 @@
+// 4) შექმენი სია 5 სიტყვით
+//  გააერთიანე სია ერთ string-ად "-" გამყოფის გამოყენებით
+//  დაბეჭდე მიღებული string
+
+const txt = ['world1','world2','world3','world4','world5']
+const result = txt.join('-') 
+console.log(result)

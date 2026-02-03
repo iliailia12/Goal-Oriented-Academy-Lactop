@@ -4,5 +4,3 @@
 
 //კონსტი დამავიწყდა
 const fruits =['apple','banana',' corn','pear','peach','grape','blue berry','rasberry','strawbery','kivi'] // მეტი ვერ მოვიფიქრე
-fruits.push('mongo')
-console.log(fruits)
