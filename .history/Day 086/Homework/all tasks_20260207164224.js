@@ -1,0 +1,21 @@
+// 1) შევქმნათ 5 ელემენტიანი სია და push()-ით დავამატოთ სახელი
+let arr = [1, 2, 3, 4, 5];
+arr.push("1920");
+console.log(arr);
+
+// 2) pop()-ით ამოვშალოთ ბოლო ელემენტი
+arr.pop();
+console.log(arr);
+
+// 3) join()-ით გავაერთიანოთ space-ით string-ის სახით
+let joinedString = arr.join(" ");
+console.log(joinedString);
+
+// 4)
+let slicedArr = arr.slice(0, 4);
+console.log(slicedArr);
+
+// 5
+let arr2 = ["a", "b", "c"];
+let finalArr = arr.concat(arr2);
+console.log(finalArr);
