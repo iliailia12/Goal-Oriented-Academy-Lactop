@@ -6,6 +6,6 @@
 
 // reverse
 
-for (let i = 200; i<= 100; i +=5){
-    console.log(i)
-}
+// for (let i = 100; i<= 200; i +=5){
+//     console.log(i)
+// }
