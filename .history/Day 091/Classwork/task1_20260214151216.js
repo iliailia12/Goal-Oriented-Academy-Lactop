@@ -1,0 +1,1 @@
+// 1) შექმენით forEach ის manual clone - ის ფუნქცია 

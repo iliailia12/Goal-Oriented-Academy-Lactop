@@ -1,0 +1,20 @@
+1) ახსენით რაში გამოიყენება forEach map filter reduce,
+
+2)  შექმენით რიცხვების მასივი, თქვენი დავალებაა დაბეჭდოთ კონსოლში თითოეული რიცხვი და მის გვერდით ტექსტი:
+
+Number is: 5
+Number is: 10
+...ასე შემდეგ
+
+3) შექმენით რიცხვების მასივი, დატოვე მხოლოდ ისეთი რიცხვები რომელიც არის ლუწი და არის მეტი 5 ზე
+
+4) შექმენით რიცხვების მასივი, reduce ის მეშვეობით იპოვე მასივში არსებული რიცხვების საშვალო 
+
+5) შექმენით რიცხვების მასივი, შენი დავალებაა დატოვო მხოლოდ ლუწი რიცხვები, შემდგომ დარჩენილი რიცხვები გაამრავლეთ 3 ზე, და საბოლოოდ გაიგეთ მასივში არსებული რიცხვების ჯამი
+
+6) გადახედეთ რესურსებს:
+https://medium.com/poka-techblog/simplify-your-javascript-use-map-reduce-and-filter-bd02c593cc2d
+
+https://www.geeksforgeeks.org/javascript/how-to-use-map-filter-and-reduce-in-javascript/?utm_source=chatgpt.com
+
+https://dev.to/yogeshraj/from-beginner-to-pro-the-ultimate-guide-to-map-filter-reduce-and-foreach-3f0j
