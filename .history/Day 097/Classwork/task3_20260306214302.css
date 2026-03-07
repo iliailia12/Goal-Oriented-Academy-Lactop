@@ -1,0 +1,18 @@
+.box{
+    width: 500px;
+    height: 500px;
+    border-radius: 100px;
+    background-color: black;
+    margin-left: 400px;
+}
+
+.boxButton{
+    background-color: whitesmoke;
+    width: 400px;
+    height: 65px;
+    border-radius: 20px;
+    border-color: red;
+    border: 10px solid color(srgb red green blue);
+    margin-top: 400px;
+    margin-left: 45px;
+}

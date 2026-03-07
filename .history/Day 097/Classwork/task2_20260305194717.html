@@ -1,0 +1,52 @@
+<!-- დავალება 1: ფერის შეცვლა (Color Changer)
+პირობა: შექმენი button და div (ზომით 100x100px). დაწერე სკრიპტი, რომელიც ღილაკზე ყოველი დაჭერისას div-ს ფონს შეუცვლის (მაგალითად, გადართავს წითელსა და ლურჯს შორის). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        .colordiv{
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            align-self: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 7px;
+            margin-left: 450px;
+            margin-top: 100px
+        }
+
+        .color_change_btn{
+            width: 300px;
+            height: 50px;
+            border-radius: 20px;
+            margin-top: 400px;
+            margin-left: 85px;
+            border: 5;
+            border-color: rgb(210, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="colordiv">
+        <button class="color_change_btn">click to Change Color</button>
+    </div>
+
+
+    <script>
+        const listOfColors = ['red','blue','green','black','orange','purple','brown','grey','gold','whyte','aqua']
+        const btn = document.getElementById("color_change_btn")
+        const box = document.getElementById("colordiv")
+        color_change_btn.addEventListener('click'=>)
+    </script>
+</body>
+</html>
