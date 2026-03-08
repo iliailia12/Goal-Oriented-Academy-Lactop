@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    ju
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    margin-left: 550px;
+    background-color: black;
+    border-radius: 5px;
+}

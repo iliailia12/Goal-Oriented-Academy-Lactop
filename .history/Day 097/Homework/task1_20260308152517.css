@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    margin-left: 550px;
+    background-color: black;
+    border-radius: 5px;
+}
