@@ -3,10 +3,8 @@ const btn = document.getElementById('BoxBtn')
 const box = document.getElementById('box')
 btn.addEventListener('click',()=>{
     if(text.textContent ==='no'){
-        text.textContent = "yes"
-        box.style.backgroundColor = "black"
+        text.textContent = "yes";
     }else{
-        text.textContent = 'no'
-        box.style.backgroundColor = 'red'
+        
     }
 })

@@ -7,6 +7,6 @@ btn.addEventListener('click',()=>{
         box.style.backgroundColor = "black"
     }else{
         text.textContent = 'no'
-        box.style.backgroundColor = 'red'
+        box.
     }
 })
