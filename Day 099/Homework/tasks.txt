@@ -1,0 +1,7 @@
+7 kyu:
+https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc
+https://www.codewars.com/kata/5aff237c578a14752d0035ae
+https://www.codewars.com/kata/58712dfa5c538b6fc7000569
+https://www.codewars.com/kata/58daa7617332e59593000006
+6 kyu:
+https://www.codewars.com/kata/58223370aef9fc03fd000071
