@@ -1,0 +1,7 @@
+2) კომენტარებით ახსენით დღეს ნასწავლი document-ის მეთოდები: getElemetnById, getElementsByTagName, getElementsByClassName, querySelector, querySelectorAll და გააკეთეთ რამოდენიმე მაგალითი მათი გამოყენებით
+
+
+1 getElementById
+აბრუნებს html ელემენტს მისი აიდით
+
+1 

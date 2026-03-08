@@ -1,0 +1,1 @@
+1) გახსენით sololearn-ში JavaScript Intermediate-ის კურსი და შემდეგ გაკვეთილამდე გაიარეთ ყველაფერი "What is DOM"-ის ჩათვლით:

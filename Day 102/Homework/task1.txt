@@ -1,0 +1,17 @@
+2) კომენტარებით ახსენით დღეს ნასწავლი document-ის მეთოდები: getElemetnById, getElementsByTagName, getElementsByClassName, querySelector, querySelectorAll და გააკეთეთ რამოდენიმე მაგალითი მათი გამოყენებით
+
+
+1 getElementById
+აბრუნებს html ელემენტს მისი აიდით
+
+2 getElementsByTagName
+აბრუნებს ელემენტს ტაგნეიმით ანუ თეგის მიხედვით
+
+3 getElementsByClassName
+აბრუნებს ელემენტს კლასის სახელის მეშვეობით ად კლასის
+
+4 querySelector
+აბრუნებს პირველ ელემენტს რომელიც ემთხვევა CSS selector-ს
+
+5 querySelectorAll
+აბრუნებს ყველა ელემენტს რომლებიც ემთხვევა CSS selector-ს
