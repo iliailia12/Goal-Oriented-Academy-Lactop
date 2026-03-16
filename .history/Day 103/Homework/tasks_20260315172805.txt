@@ -1,0 +1,4 @@
+6 kyu (JavaScript)
+
+https://www.codewars.com/kata/5420fc9bb5b2c7fd57000004
+https://www.codewars.com/kata/5d23d89906f92a00267bb83d
